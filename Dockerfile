@@ -17,4 +17,6 @@ RUN yarn start
 
 FROM nginx:alpine
 
+RUN rm -r /usr/share/nginx/html/*
+
 COPY --from=builder /ng-app/dist /usr/share/nginx/html
