@@ -1,0 +1,13 @@
+#header-icon {
+  margin-right: 1rem;
+}
+
+#header-icon i {
+  display: inline-block;
+  color: #ff0;
+  transition: color 500ms ease-out;
+}
+
+#brand:hover i {
+  color: #fa0;
+}

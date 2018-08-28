@@ -1,0 +1,12 @@
+#heart {
+  animation: heartBeat 3s ease infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
