@@ -8,7 +8,6 @@ const Header = ({ siteTitle }) => (
   <div
     style={{
       background: Config.theme.primary,
-      marginBottom: '1.45rem',
       display: 'flex',
       alignItems: 'start',
     }}
@@ -36,9 +35,6 @@ const Header = ({ siteTitle }) => (
             textDecoration: 'none',
           }}
         >
-          <span id="header-icon">
-            <i className="fas fa-bolt">️</i>
-          </span>
           {siteTitle}
         </Link>
       </h1>

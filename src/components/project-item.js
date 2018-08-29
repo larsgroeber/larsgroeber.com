@@ -24,6 +24,7 @@ const ProjectItem = ({ item }) => {
       <p>{item.description}</p>
       {item.tags.map(t => (
         <span
+          key={t}
           style={{
             padding: '0 5px',
             backgroundColor: Config.theme.accent,
@@ -31,6 +32,24 @@ const ProjectItem = ({ item }) => {
             margin: '0 0.2rem 0.2rem 0',
             borderRadius: '5px',
             display: 'inline-block',
+            fontSize: '0.8rem',
+          }}
+        >
+          {t}
+        </span>
+      ))}
+      <br />
+      {item.position.map(t => (
+        <span
+          key={t}
+          style={{
+            padding: '0 5px',
+            backgroundColor: Config.theme.primary,
+            color: 'white',
+            margin: '0 0.2rem 0.2rem 0',
+            borderRadius: '5px',
+            display: 'inline-block',
+            fontSize: '0.8rem',
           }}
         >
           {t}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { StaticQuery, graphql } from 'gatsby'
 import { Config } from '../config'
 
 import './profile.css'
@@ -29,6 +29,7 @@ const Profile = () => (
               width: size,
               height: size,
               borderRadius: size,
+              margin: '2rem 0',
             }}
             src={pictureUrl}
             alt={name}
@@ -36,6 +37,7 @@ const Profile = () => (
           <div>
             <h2
               style={{
+                margin: 0,
                 display: 'inline-block',
                 borderBottom: `solid 4px ${Config.theme.primary}`,
               }}
