@@ -1,6 +1,6 @@
 export const Config = {
   theme: {
-    primary: '#81d4fa',
+    primary: '#5c6bc0',
     accent: '#ab47bc',
   },
 }

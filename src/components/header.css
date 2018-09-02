@@ -11,3 +11,9 @@
 #brand:hover i {
   color: #fa0;
 }
+
+@media screen and (max-width: 600px) {
+  #brand {
+    font-size: 1.2rem !important;
+  }
+}

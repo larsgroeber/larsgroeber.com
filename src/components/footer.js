@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import './footer.css'
+import { Config } from '../config'
 
 const Footer = ({ author, authorUrl }) => (
   <footer
@@ -9,13 +10,14 @@ const Footer = ({ author, authorUrl }) => (
       bottom: 0,
       left: 0,
       right: 0,
-      padding: '0.3rem',
+      padding: '0.5rem',
       textAlign: 'center',
-      background: '#81d4fa',
+      background: Config.theme.primary,
       fontSize: '1rem',
+      color: 'white',
     }}
   >
-    <div style={{ marginBottom: '5px' }}>
+    <div>
       Made with
       <span
         style={{

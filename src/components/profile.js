@@ -30,6 +30,7 @@ const Profile = () => (
               height: size,
               borderRadius: size,
               margin: '2rem 0',
+              marginTop: '2.5rem',
             }}
             src={pictureUrl}
             alt={name}
@@ -40,6 +41,7 @@ const Profile = () => (
                 margin: 0,
                 display: 'inline-block',
                 borderBottom: `solid 4px ${Config.theme.primary}`,
+                marginBottom: '1rem',
               }}
             >
               {name}

@@ -12,13 +12,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Lars Gröber',
+        short_name: 'LGroeber',
         start_url: '/',
-        background_color: '#4fc3f7',
-        theme_color: '#4fc3f7',
+        background_color: '#5c6bc0',
+        theme_color: '#5c6bc0',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/profile.jpg', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-offline',
