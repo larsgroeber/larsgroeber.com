@@ -31,6 +31,10 @@ const Footer = ({ author, authorUrl }) => (
       by <a href={authorUrl}>{author}</a> using{' '}
       <a href="https://www.gatsbyjs.com/">Gatsby</a>
     </div>
+    <div>
+      <Link to="/about/">Legal Notice</Link> |{' '}
+      <Link to="/policy/">Privacy statement</Link>
+    </div>
   </footer>
 )
 

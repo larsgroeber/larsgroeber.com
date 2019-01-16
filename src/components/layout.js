@@ -26,8 +26,16 @@ const Layout = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Personal website of Lars Gröber' },
+            {
+              name: 'description',
+              content:
+                'Personal website of Lars Gröber, independent fullstack software developer',
+            },
             { name: 'keywords', content: 'developer, larsgroeber, physics' },
+            {
+              name: 'google-site-verification',
+              content: 'k5FyLGattOf3fzpCLttJ5Tf5P6ZQjJSp_9-btYKIouY',
+            },
           ]}
           link={[
             {
@@ -38,6 +46,7 @@ const Layout = ({ children }) => (
               crossorigin: 'anonymous',
             },
           ]}
+          script={[{}]}
         >
           <html lang="en" />
         </Helmet>
