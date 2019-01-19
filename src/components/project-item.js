@@ -1,5 +1,7 @@
 import React from 'react'
 import { Config } from '../config'
+import Card from './card'
+import Tag from './tag'
 
 const ProjectItem = ({ item }) => {
   let github = item.openSource ? (
@@ -9,53 +11,16 @@ const ProjectItem = ({ item }) => {
     />
   ) : null
   return (
-    <div
-      style={{
-        backgroundColor: 'white',
-        padding: '10px',
-        boxShadow: '1px 1px 10px 1px #aaa',
-        borderRadius: '10px',
-      }}
-    >
+    <Card>
       {github}
       <a href={item.url}>
         <h4 style={{ marginTop: 0 }}>{item.title}</h4>
       </a>
       <p>{item.description}</p>
       {item.tags.map(t => (
-        <span
-          key={t}
-          style={{
-            padding: '0 5px',
-            backgroundColor: Config.theme.accent,
-            color: 'white',
-            margin: '0 0.2rem 0.2rem 0',
-            borderRadius: '5px',
-            display: 'inline-block',
-            fontSize: '0.8rem',
-          }}
-        >
-          {t}
-        </span>
+        <Tag name={t} key={t} color={Config.theme.accent} />
       ))}
-      <br />
-      {item.position.map(t => (
-        <span
-          key={t}
-          style={{
-            padding: '0 5px',
-            backgroundColor: Config.theme.primary,
-            color: 'white',
-            margin: '0 0.2rem 0.2rem 0',
-            borderRadius: '5px',
-            display: 'inline-block',
-            fontSize: '0.8rem',
-          }}
-        >
-          {t}
-        </span>
-      ))}
-    </div>
+    </Card>
   )
 }
 
