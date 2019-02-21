@@ -49,6 +49,13 @@ const Layout = ({ children }) => (
           script={[{}]}
         >
           <html lang="en" />
+          <script
+            src="https://cdn.logrocket.io/LogRocket.min.js"
+            crossorigin="anonymous"
+          />
+          <script>
+            window.LogRocket && window.LogRocket.init('dy8wwz/website');
+          </script>
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div

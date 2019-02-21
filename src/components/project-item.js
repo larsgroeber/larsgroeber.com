@@ -5,10 +5,12 @@ import Tag from './tag'
 
 const ProjectItem = ({ item }) => {
   let github = item.openSource ? (
-    <i
-      style={{ float: 'right', fontSize: '1.5rem' }}
-      className="fab fa-github"
-    />
+    <a href={item.github}>
+      <i
+        style={{ float: 'right', fontSize: '1.5rem' }}
+        className="fab fa-github"
+      />
+    </a>
   ) : null
   return (
     <Card>

@@ -22,6 +22,24 @@ const workItems = [
     tags: ['Angular 2', 'Java Spring Boot'],
     position: ['Fullstack Developer'],
   },
+  {
+    title: 'Smaller projects',
+    description: [
+      `
+      As a freelancer I worked on several smaller projects for a variety of clients:
+    `,
+      `I developed a small tool using C# to compare prices on IKEA websites.`,
+      `I build a small api using Express and CouchDB to create a new unique ID.`,
+      `I improved an algorithm for a mobile app significantly by rewriting parts using NodeJS.`,
+    ],
+    time: {
+      start: '01.03.2018',
+      end: 'now',
+    },
+    link: 'https://larsgroeber.com',
+    tags: ['C#', 'NodeJS', 'Express'],
+    position: ['Fullstack Developer'],
+  },
 
   {
     title: 'Coconut Capital',
