@@ -5,6 +5,9 @@ module.exports = {
       name: 'Lars Gröber',
       pictureUrl: '/static/profile.jpg',
       authorUrl: 'https://github.com/Larsg7',
+      githubUrl: 'https://github.com/Larsg7',
+      linkedinUrl: 'https://www.linkedin.com/in/larsgroeber',
+      twitterUrl: 'https://twitter.com/GroeberLars',
     },
   },
   plugins: [
@@ -37,7 +40,7 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
-        respectDNT: true,
+        respectDNT: false,
       },
     },
   ],

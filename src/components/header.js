@@ -4,19 +4,18 @@ import { Config } from '../config'
 
 import './header.css'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, author }) => (
   <div
     style={{
       background: Config.theme.primary,
       display: 'flex',
-      alignItems: 'start',
+      alignItems: 'center',
+      flexDirection: 'row',
     }}
   >
     <div
       style={{
-        margin: '0 auto',
         padding: '0.6rem 1.0875rem',
-        flex: '1',
       }}
     >
       <h1
@@ -38,6 +37,37 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+    </div>
+    <div
+      style={{
+        flex: '1',
+      }}
+    />
+    <div>
+      <a
+        href={author.linkedinUrl}
+        className="headerIcon"
+        target="_blank"
+        id="linkedin-icon"
+      >
+        <i className="fab fa-linkedin" />
+      </a>
+      <a
+        href={author.githubUrl}
+        className="headerIcon"
+        target="_blank"
+        id="github-icon"
+      >
+        <i className="fab fa-github" />
+      </a>
+      <a
+        href={author.twitterUrl}
+        className="headerIcon"
+        target="_blank"
+        id="twitter-icon"
+      >
+        <i className="fab fa-twitter" />
+      </a>
     </div>
   </div>
 )

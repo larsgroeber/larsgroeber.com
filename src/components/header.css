@@ -12,8 +12,31 @@
   color: #fa0;
 }
 
+.headerIcon {
+  font-size: 1.5rem;
+  padding-right: 0.8rem;
+  color: white;
+  transition: color 300ms;
+}
+
+#twitter-icon:hover {
+  color: rgb(29, 161, 242);
+}
+
+#github-icon:hover {
+  color: rgb(36, 41, 46);
+}
+
+#linkedin-icon:hover {
+  color: rgb(0, 160, 220);
+}
+
 @media screen and (max-width: 600px) {
   #brand {
-    font-size: 1.2rem !important;
+    font-size: 1.3rem !important;
+  }
+
+  .headerIcon {
+    font-size: 1.3rem;
   }
 }

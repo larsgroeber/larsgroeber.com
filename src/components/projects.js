@@ -4,7 +4,7 @@ import ProjectItem from './project-item'
 const projects = [
   {
     title: 'RiedbergTV Website',
-    url: 'https://riedberg.netlify.com',
+    url: 'https://riedbergtv.netlify.com',
     github: 'https://github.com/Larsg7/riedbergtv',
     description:
       'Fully featured website for the scientific video project RiedbergTV.',

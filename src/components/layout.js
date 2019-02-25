@@ -16,6 +16,9 @@ const Layout = ({ children }) => (
             title
             author {
               authorUrl
+              githubUrl
+              linkedinUrl
+              twitterUrl
             }
           }
         }
@@ -49,15 +52,11 @@ const Layout = ({ children }) => (
           script={[{}]}
         >
           <html lang="en" />
-          <script
-            src="https://cdn.logrocket.io/LogRocket.min.js"
-            crossorigin="anonymous"
-          />
-          <script>
-            window.LogRocket && window.LogRocket.init('dy8wwz/website');
-          </script>
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          author={data.site.siteMetadata.author}
+        />
         <div
           style={{
             margin: '0 auto',
