@@ -19,6 +19,7 @@ const Layout = ({ children }) => (
               githubUrl
               linkedinUrl
               twitterUrl
+              mediumUrl
             }
           }
         }

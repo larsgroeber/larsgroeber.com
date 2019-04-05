@@ -61,6 +61,14 @@ const Header = ({ siteTitle, author }) => (
         <i className="fab fa-github" />
       </a>
       <a
+        href={author.mediumUrl}
+        className="headerIcon"
+        target="_blank"
+        id="medium-icon"
+      >
+        <i className="fab fa-medium" />
+      </a>
+      <a
         href={author.twitterUrl}
         className="headerIcon"
         target="_blank"

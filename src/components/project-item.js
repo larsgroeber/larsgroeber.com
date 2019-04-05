@@ -5,9 +5,9 @@ import Tag from './tag'
 
 const ProjectItem = ({ item }) => {
   let github = item.openSource ? (
-    <a href={item.github}>
+    <a href={item.github} target="_black">
       <i
-        style={{ float: 'right', fontSize: '1.5rem' }}
+        style={{ float: 'right', fontSize: '1.5rem', color: 'black' }}
         className="fab fa-github"
       />
     </a>

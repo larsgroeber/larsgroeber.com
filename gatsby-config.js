@@ -8,6 +8,7 @@ module.exports = {
       githubUrl: 'https://github.com/Larsg7',
       linkedinUrl: 'https://www.linkedin.com/in/larsgroeber',
       twitterUrl: 'https://twitter.com/GroeberLars',
+      mediumUrl: 'https://medium.com/@larsgroeber',
     },
   },
   plugins: [
