@@ -19,6 +19,10 @@
   transition: color 300ms;
 }
 
+#email-icon:hover {
+  color: rgb(0, 0, 0);
+}
+
 #twitter-icon:hover {
   color: rgb(29, 161, 242);
 }

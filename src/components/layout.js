@@ -20,6 +20,7 @@ const Layout = ({ children }) => (
               linkedinUrl
               twitterUrl
               mediumUrl
+              contactEmail
             }
           }
         }

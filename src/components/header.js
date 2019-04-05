@@ -45,10 +45,22 @@ const Header = ({ siteTitle, author }) => (
     />
     <div>
       <a
+        href={`mailto:${author.contactEmail}`}
+        className="headerIcon"
+        target="_blank"
+        id="email-icon"
+        rel="noopener"
+        aria-label="Write me an email"
+      >
+        <i className="fas fa-at" />
+      </a>
+      <a
         href={author.linkedinUrl}
         className="headerIcon"
         target="_blank"
         id="linkedin-icon"
+        rel="noopener"
+        aria-label="Link to my linkedin page"
       >
         <i className="fab fa-linkedin" />
       </a>
@@ -57,6 +69,8 @@ const Header = ({ siteTitle, author }) => (
         className="headerIcon"
         target="_blank"
         id="github-icon"
+        rel="noopener"
+        aria-label="Link to my github page"
       >
         <i className="fab fa-github" />
       </a>
@@ -65,6 +79,8 @@ const Header = ({ siteTitle, author }) => (
         className="headerIcon"
         target="_blank"
         id="medium-icon"
+        rel="noopener"
+        aria-label="Link to my medium page"
       >
         <i className="fab fa-medium" />
       </a>
@@ -73,6 +89,8 @@ const Header = ({ siteTitle, author }) => (
         className="headerIcon"
         target="_blank"
         id="twitter-icon"
+        rel="noopener"
+        aria-label="Link to my twitter page"
       >
         <i className="fab fa-twitter" />
       </a>

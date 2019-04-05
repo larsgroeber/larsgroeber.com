@@ -28,12 +28,20 @@ const Footer = ({ author, authorUrl }) => (
       >
         <i className="fas fa-heart" id="heart" />
       </span>
-      by <a href={authorUrl}>{author}</a> using{' '}
-      <a href="https://www.gatsbyjs.com/">Gatsby</a>
+      by{' '}
+      <a href={authorUrl} aria-label="Author url">
+        {author}
+      </a>{' '}
+      using <a href="https://www.gatsbyjs.com/">Gatsby</a>
     </div>
     <div>
-      <Link to="/about/">Legal Notice</Link> |{' '}
-      <Link to="/policy/">Privacy statement</Link>
+      <Link to="/about/" aria-label="Legal notice">
+        Legal Notice
+      </Link>{' '}
+      |{' '}
+      <Link to="/policy/" aria-label="Privacy statement">
+        Privacy statement
+      </Link>
     </div>
   </footer>
 )

@@ -12,7 +12,7 @@ const workItems = [
     and will aid you in the process of making your digital projects a success!"
     
     `,
-      `As a freelancer, I work on several projects including their website and internal systems. I am also involved in training other co-workers.`,
+      `As the lead developer I work on several projects including client projects and internal systems. I am also involved in training other co-workers.`,
     ],
     time: {
       start: '01.06.2018',
@@ -20,7 +20,7 @@ const workItems = [
     },
     link: 'https://www.inheaden.com',
     tags: ['Angular 2', 'Java Spring Boot'],
-    position: ['Fullstack Developer'],
+    position: ['Fullstack Developer', 'Team lead'],
   },
   {
     title: 'Smaller projects',
@@ -28,16 +28,17 @@ const workItems = [
       `
       As a freelancer I worked on several smaller projects for a variety of clients:
     `,
-      `I developed a small tool using C# to compare prices on IKEA websites.`,
-      `I build a small api using Express and CouchDB to create a new unique ID.`,
+      `I build small interactive browser based learning experiences using Angular 1.`,
       `I improved an algorithm for a mobile app significantly by rewriting parts using NodeJS.`,
+      `I build a small api using Express and CouchDB to create a new unique ID.`,
+      `I developed a small tool using C# to compare prices on IKEA websites.`,
     ],
     time: {
       start: '01.03.2018',
       end: 'now',
     },
     link: 'https://larsgroeber.com',
-    tags: ['C#', 'NodeJS', 'Express'],
+    tags: ['C#', 'NodeJS', 'Express', 'Angular 1'],
     position: ['Fullstack Developer'],
   },
 
@@ -49,7 +50,7 @@ const workItems = [
       IT solutions and cover any needs from consulting services up to programming, operation and maintenance."
     
     `,
-      `While working there I build an app using Ionic, worked on a large Angular 2 project and developed as the team leader an digital recruitment test for a client.`,
+      `While working there I build an app using Ionic, worked on a large Angular 2 project and developed a digital recruitment test for a client as the team leader.`,
     ],
     time: {
       start: '01.08.2017',
@@ -65,7 +66,6 @@ const workItems = [
       `
       "PhysikOnline is an organization at the physics faculty of Goethe University. 
       The special feature of PhysikOnline is that it is purely driven by students (scientific assistants) without the direct influence of professors."
-    
     `,
       ``,
     ],
@@ -86,7 +86,12 @@ const Work = () => {
       {workItems.map(item => {
         return (
           <Card key={item.title}>
-            <a href={item.link} target="_blank">
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener"
+              aria-label={`Link to work item ${item.title}`}
+            >
               <h4 style={{ marginTop: 0, display: 'inline-block' }}>
                 {item.title}
               </h4>

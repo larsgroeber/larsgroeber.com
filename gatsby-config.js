@@ -4,6 +4,7 @@ module.exports = {
     author: {
       name: 'Lars Gröber',
       pictureUrl: '/static/profile.jpg',
+      contactEmail: 'hello@larsgroeber.com',
       authorUrl: 'https://github.com/Larsg7',
       githubUrl: 'https://github.com/Larsg7',
       linkedinUrl: 'https://www.linkedin.com/in/larsgroeber',

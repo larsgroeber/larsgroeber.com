@@ -5,7 +5,12 @@ import Tag from './tag'
 
 const ProjectItem = ({ item }) => {
   let github = item.openSource ? (
-    <a href={item.github} target="_black">
+    <a
+      href={item.github}
+      target="_black"
+      rel="noopener"
+      aria-label={`Github link for project ${item.title}`}
+    >
       <i
         style={{ float: 'right', fontSize: '1.5rem', color: 'black' }}
         className="fab fa-github"
