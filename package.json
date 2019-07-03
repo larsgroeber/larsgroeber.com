@@ -15,7 +15,8 @@
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
-    "typography-theme-github": "^0.15.10"
+    "typography-theme-github": "^0.15.10",
+    "snyk": "^1.189.0"
   },
   "keywords": [
     "gatsby"
@@ -26,7 +27,9 @@
     "build": "gatsby build && cp now.json public",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
@@ -34,5 +37,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  }
+  },
+  "snyk": true
 }
