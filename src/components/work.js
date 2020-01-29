@@ -18,7 +18,7 @@ const workItems = [
       start: '01.06.2018',
       end: 'now',
     },
-    link: 'https://www.inheaden.com',
+    link: 'https://www.inheaden.io',
     tags: ['Angular 2', 'Java Spring Boot'],
     position: ['Fullstack Developer', 'Team lead'],
   },
