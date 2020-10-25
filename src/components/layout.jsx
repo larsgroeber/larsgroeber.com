@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
   return (
     <div className="layout">
       <div className="profile-container">
-        <img src={ProfileImage} alt="profile" />
+        <img src={ProfileImage} alt="profile" width="500" height="500" />
       </div>
       <main>
         <div className="main-inner-wrapper">{children}</div>
@@ -44,7 +44,11 @@ const Layout = ({ children }) => {
             <p>
               My hoster might store your IP address and/or other information
               about you (
-              <a href="http://" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.netlify.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 see their policy
               </a>
               ).
