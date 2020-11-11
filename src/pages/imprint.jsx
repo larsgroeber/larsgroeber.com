@@ -12,9 +12,9 @@ export class Imprint extends PureComponent {
         <p>
           Lars Gr&ouml;ber
           <br />
-          T&ouml;ngesgasse 38
+          Hilpertstraße 31
           <br />
-          60311 Frankfurt am Main
+          64295 Darmstadt
         </p>
         <h2>Kontakt</h2>
         <p>E-Mail: lars@larsgroeber.com</p>
