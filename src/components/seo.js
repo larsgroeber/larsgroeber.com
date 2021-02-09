@@ -40,6 +40,7 @@ function SEO({ description, lang, meta, title }) {
           name: `description`,
           content: metaDescription,
         },
+        { property: "image", content: "/icon_large.png" },
         {
           property: `og:title`,
           content: title,
@@ -48,6 +49,7 @@ function SEO({ description, lang, meta, title }) {
           property: `og:description`,
           content: metaDescription,
         },
+        { property: "og:image", content: "/icon_large.png" },
         {
           property: `og:type`,
           content: `website`,

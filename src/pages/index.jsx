@@ -40,8 +40,14 @@ const IndexPage = () => (
       <h1>Lars Gröber</h1>
       <p className="subtitle">
         CTO & Co-Founder of{" "}
-        <a href="http://inheaden.io" target="_blank" rel="noopener noreferrer">
+        <a href="https://inheaden.io" target="_blank" rel="noopener noreferrer">
           Inheaden
+        </a>
+      </p>
+      <p className="subtitle">
+        Maker of{" "}
+        <a href="https://inco.video" target="_blank" rel="noopener noreferrer">
+          Inheaden Connect
         </a>
       </p>
 
