@@ -5,15 +5,13 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React, { useState } from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import ProfileImage from "../images/profile_full.jpg"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
-  const [showBanner, setShowBanner] = useState(true)
-
   return (
     <div className="layout">
       <div className="profile-container">
@@ -26,39 +24,6 @@ const Layout = ({ children }) => {
           <Link to="/privacy">Dataprivacy</Link>
         </footer>
       </main>
-      {showBanner && (
-        <div className="banner">
-          <div>
-            <p>
-              I am not storing any data about you or your visit of my website.
-              Also no fonts or external scripts are loaded or cookies saved (
-              <a
-                href="https://github.com/larsgroeber/larsgroeber.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                check out the source
-              </a>
-              ).
-            </p>
-            <p>
-              My hoster might store your IP address and/or other information
-              about you (
-              <a
-                href="https://www.netlify.com/privacy"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                see their policy
-              </a>
-              ).
-            </p>
-          </div>
-          <div>
-            <button onClick={() => setShowBanner(false)}>Got it</button>
-          </div>
-        </div>
-      )}
     </div>
   )
 }
