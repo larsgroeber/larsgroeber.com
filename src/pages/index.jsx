@@ -6,6 +6,11 @@ import "./index.scss"
 
 const links = [
   {
+    name: "Podcast with Leading Tech",
+    link:
+      "https://podcasts.apple.com/de/podcast/leading-tech-der-podcast-von-und-f%C3%BCr-ceo-cto-cdo/id1619277687?i=1000565132609",
+  },
+  {
     name: "Podcast with StartupFever",
     link: "https://startupfever.de/lars-groeber/",
   },
