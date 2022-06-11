@@ -1,14 +1,17 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import "./index.scss"
+
+import Linkedin from "../images/linkedin.svg"
+import Github from "../images/github.svg"
+import Twitter from "../images/twitter.svg"
 
 const links = [
   {
     name: "Podcast with Leading Tech",
-    link:
-      "https://podcasts.apple.com/de/podcast/leading-tech-der-podcast-von-und-f%C3%BCr-ceo-cto-cdo/id1619277687?i=1000565132609",
+    link: "https://podcasts.apple.com/de/podcast/leading-tech-der-podcast-von-und-f%C3%BCr-ceo-cto-cdo/id1619277687?i=1000565132609",
   },
   {
     name: "Podcast with StartupFever",
@@ -20,19 +23,19 @@ const links = [
   },
 ]
 
-const socal = [
+const social = [
   {
-    icon: require("../images/linkedin.svg"),
+    icon: Linkedin,
     name: "Linkedin",
     link: "https://www.linkedin.com/in/larsgroeber",
   },
   {
-    icon: require("../images/github.svg"),
+    icon: Github,
     name: "github",
     link: "https://github.com/larsgroeber",
   },
   {
-    icon: require("../images/twitter.svg"),
+    icon: Twitter,
     name: "twitter",
     link: "https://twitter.com/GroeberLars",
   },
@@ -40,7 +43,7 @@ const socal = [
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Seo title="Home" />
     <div className="content">
       <h1>Lars Gröber</h1>
       <p className="subtitle">
@@ -70,10 +73,10 @@ const IndexPage = () => (
         className="social-media"
         style={{
           display: "grid",
-          gridTemplateColumns: `repeat(${socal.length}, 40px)`,
+          gridTemplateColumns: `repeat(${social.length}, 40px)`,
         }}
       >
-        {socal.map(s => (
+        {social.map(s => (
           <a
             key={s.name}
             href={s.link}
