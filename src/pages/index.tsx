@@ -8,20 +8,7 @@ import Linkedin from "../images/linkedin.svg"
 import Github from "../images/github.svg"
 import Twitter from "../images/twitter.svg"
 
-const links = [
-  {
-    name: "Podcast with Leading Tech",
-    link: "https://podcasts.apple.com/de/podcast/leading-tech-der-podcast-von-und-f%C3%BCr-ceo-cto-cdo/id1619277687?i=1000565132609",
-  },
-  {
-    name: "Podcast with StartupFever",
-    link: "https://startupfever.de/lars-groeber/",
-  },
-  {
-    name: "Interview with Citrus Global (Youtube)",
-    link: "https://www.youtube.com/watch?v=fXRVv3kRdQ0",
-  },
-]
+const links: { name: string; link: string }[] = []
 
 const social = [
   {
@@ -34,11 +21,6 @@ const social = [
     name: "github",
     link: "https://github.com/larsgroeber",
   },
-  {
-    icon: Twitter,
-    name: "twitter",
-    link: "https://twitter.com/GroeberLars",
-  },
 ]
 
 const IndexPage = () => (
@@ -47,27 +29,30 @@ const IndexPage = () => (
     <div className="content">
       <h1>Lars Gröber</h1>
       <p className="subtitle">
+        Engineering Leadership
+        <br />
+        Backend & Platform Architecture
+        <br />
+        Team & Org Building
+      </p>
+      <p className="subtitle">
         CTO & Co-Founder of{" "}
         <a href="https://inheaden.io" target="_blank" rel="noopener noreferrer">
           Inheaden
         </a>
       </p>
-      <p className="subtitle">
-        Maker of{" "}
-        <a href="https://inco.video" target="_blank" rel="noopener noreferrer">
-          Inheaden Connect
-        </a>
-      </p>
 
-      <div className="links">
-        {links.map(l => (
-          <p key={l.name}>
-            <a href={l.link} target="_blank" rel="noopener noreferrer">
-              {l.name}
-            </a>
-          </p>
-        ))}
-      </div>
+      {links.length ? (
+        <div className="links">
+          {links.map(l => (
+            <p key={l.name}>
+              <a href={l.link} target="_blank" rel="noopener noreferrer">
+                {l.name}
+              </a>
+            </p>
+          ))}
+        </div>
+      ) : null}
 
       <div
         className="social-media"
